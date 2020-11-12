@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">helloWorldApp</string>
+    <string name="welcomeText">"Welcome to Calvin's world"</string>
+    <string name="emailPrompt">"Give me your email and I'll send you spam!"</string>
+    <string name="title_activity_logged_in">loggedIn</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="enterApp">"You have entered"</string>
+    <string name="responseText" type="id">Hello</string>
+    <string name="portNumber" type="id">5000</string>
+    <string name="IPAddress" type="id">localhost</string>
+</resources>

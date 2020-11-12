@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">helloWorldApp</string>
+    <string name="welcomeText">"Welcome to Calvin's world"</string>
+    <string name="emailPrompt">"Give me your email and I'll send you spam!"</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".loggedIn"
+    tools:ignore="ExtraText">
+
+    <!--android:text="Hello. This is Calvin's World"-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="90dp"
+        android:minHeight="90dp"
+        android:textAlignment="center"
+        android:text="Take Pic"
+        android:textColor="@color/black"
+        android:fontFamily="@string/first_fragment_label"
+        android:id="@+id/button2"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/imageView2"
+        android:layout_gravity="center"
+        android:onClick="takePicture"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="550px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:layout_weight="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portNumber"
+        android:text="@string/portNumber"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="300px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="250px"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_gravity="right"/>
+
+    <EditText
+        android:layout_weight="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IPAddress"
+        android:text="@string/IPAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="250px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message from the Server ..."
+        android:id="@+id/responseText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to Server"
+        android:onClick="connectServer"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="100px"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
